@@ -9,7 +9,7 @@ public class CircleComponent extends JComponent
 	private int[] xValues = new int[MAXPOINTS];
 	private int[] yValues = new int[MAXPOINTS];
 	private int pointsRecorded = 0;
-	private Ellipse2D.Double circle;
+	private Ellipse2D.Double circle = new Ellipse2D.Double();
 
 	@Override
 	public void paintComponent(Graphics g)
