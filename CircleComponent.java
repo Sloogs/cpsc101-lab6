@@ -1,3 +1,22 @@
+package cpsc101.nickslugocki.lab6;
+
+/**
+* This file is part of a solution to
+*     CPSC 101, Winter 2020, Lab 6, Problem P10.26
+*
+* This program sets up the frame for records mouse clicks for up two points. It then uses the two
+* points to draw a circle.
+* The first point given is the radius.
+* The second point given will draw the perimeter of the circle.
+*
+* This class creates the main method and represents a Java Swing Component class for our program's
+* GUI elements.
+*
+* @author Nicholas Slugocki
+* Student Number: 230082267
+* @version 1
+*/
+
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.Ellipse2D;
@@ -18,6 +37,12 @@ public class CircleComponent extends JComponent
 		g2.draw(circle);
 	}
 
+	/**
+	* Records a point at the given x and y values.
+	* @param x x-value
+	* @param y y-value
+	* @return Nothing
+	*/
 	public void recordPoint(int x, int y)
 	{
 		if (pointsRecorded == MAXPOINTS) {
@@ -28,6 +53,10 @@ public class CircleComponent extends JComponent
 		pointsRecorded++;
 	}
 
+	/**
+	* Resets the list of recorded points.
+	* @return Nothing
+	*/
 	public void resetPoints()
 	{
 		for (int i = 0; i < MAXPOINTS; i++)
@@ -38,6 +67,10 @@ public class CircleComponent extends JComponent
 		}
 	}
 
+	/**
+	* Draws a circle using the given points that are recorded by the class.
+	* @return Nothing
+	*/
 	public void drawCircle()
 	{
 		if (pointsRecorded == MAXPOINTS){
