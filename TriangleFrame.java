@@ -2,7 +2,7 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
 import javax.swing.JFrame;
 
-public class MouseTriangleFrame extends JFrame
+public class TriangleFrame extends JFrame
 {
 	private MouseTriangleComponent scene;
 

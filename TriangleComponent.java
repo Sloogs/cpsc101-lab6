@@ -3,7 +3,7 @@ import java.awt.Graphics2D;
 import java.awt.Polygon;
 import javax.swing.JComponent;
 
-public class MouseTriangleComponent extends JComponent
+public class TriangleComponent extends JComponent
 {
 	private static final int MAXPOINTS = 3;
 	private int[] xValues = new int[MAXPOINTS];
