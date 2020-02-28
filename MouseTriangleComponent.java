@@ -9,7 +9,7 @@ public class MouseTriangleComponent extends JComponent
 	private int[] xValues = new int[MAXPOINTS];
 	private int[] yValues = new int[MAXPOINTS];
 	private int pointsRecorded = 0;
-	private Polygon polygon;
+	private Polygon polygon = new Polygon();
 
 	@Override
 	public void paintComponent(Graphics g)
