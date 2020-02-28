@@ -1,7 +1,6 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Polygon;
-import java.awt.BasicStroke;
 import javax.swing.JComponent;
 
 public class MouseTriangleComponent extends JComponent
@@ -10,13 +9,12 @@ public class MouseTriangleComponent extends JComponent
 	private int[] xValues = new int[MAXPOINTS];
 	private int[] yValues = new int[MAXPOINTS];
 	private int pointsRecorded = 0;
-	private Graphics2D g2;
 	private Polygon polygon;
 
 	@Override
 	public void paintComponent(Graphics g)
 	{
-		g2 = (Graphics2D) g;
+		Graphics2D g2 = (Graphics2D) g;
 		g2.draw(polygon);
 	}
 
