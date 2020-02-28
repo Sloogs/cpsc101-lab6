@@ -11,7 +11,7 @@ public class TriangleViewer
 
 	public static void main(String[] args)
 	{
-		JFrame frame = new MouseTriangleFrame();
+		JFrame frame = new TriangleFrame();
 
 		frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

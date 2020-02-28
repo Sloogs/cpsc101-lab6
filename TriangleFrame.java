@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 
 public class TriangleFrame extends JFrame
 {
-	private MouseTriangleComponent scene;
+	private TriangleComponent scene;
 
 	class MousePressListener implements MouseListener
 	{
@@ -22,9 +22,9 @@ public class TriangleFrame extends JFrame
 		public void mouseExited(MouseEvent me) {}
 	}
 
-	public MouseTriangleFrame()
+	public TriangleFrame()
 	{
-		scene = new MouseTriangleComponent();
+		scene = new TriangleComponent();
 		add(scene);
 
 		MouseListener listener = new MousePressListener();
