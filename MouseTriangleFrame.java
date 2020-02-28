@@ -8,15 +8,18 @@ public class MouseTriangleFrame extends JFrame
 
 	class MousePressListener implements MouseListener
 	{
-		public void mousePressed(MouseEvent m)
+		public void mousePressed(MouseEvent me)
 		{
-			System.out.println("The mouse was clicked");
+			int x = me.getX();
+			int y = me.getY();
+			scene.recordPoint(x, y);
+			scene.drawPoints();
 		}
 
-		public void mouseReleased(MouseEvent m) {}
-		public void mouseClicked(MouseEvent m) {}
-		public void mouseEntered(MouseEvent m) {}
-		public void mouseExited(MouseEvent m) {}
+		public void mouseReleased(MouseEvent me) {}
+		public void mouseClicked(MouseEvent me) {}
+		public void mouseEntered(MouseEvent me) {}
+		public void mouseExited(MouseEvent me) {}
 	}
 
 	public MouseTriangleFrame()

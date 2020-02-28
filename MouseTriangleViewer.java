@@ -6,8 +6,8 @@ import javax.swing.JPanel;
 
 public class MouseTriangleViewer
 {
-	private static final int FRAME_WIDTH = 300;
-	private static final int FRAME_HEIGHT = 200;
+	private static final int FRAME_WIDTH = 800;
+	private static final int FRAME_HEIGHT = 600;
 	private static int buttonAClickCount = 0;
 	private static int buttonBClickCount = 0;
 
